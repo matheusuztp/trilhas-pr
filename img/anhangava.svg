@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="Ilustração do Morro do Anhangava">
+  <rect width="400" height="220" fill="#fde2c4"/>
+  <circle cx="90" cy="60" r="28" fill="#f7b267"/>
+  <path d="M0 220 L0 170 Q120 40 220 80 Q300 110 400 150 L400 220 Z" fill="#8a7a63"/>
+  <path d="M150 70 Q190 55 225 80 L205 95 Q180 80 160 92 Z" fill="#b8a78c"/>
+  <path d="M0 220 L0 190 Q200 160 400 195 L400 220 Z" fill="#4f7a4c"/>
+</svg>

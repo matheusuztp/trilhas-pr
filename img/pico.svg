@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="Ilustração do Pico Paraná">
+  <rect width="400" height="220" fill="#cfe3ef"/>
+  <path d="M0 200 L110 70 L160 120 L230 30 L300 110 L340 80 L400 140 L400 220 L0 220 Z" fill="#5b6f7a"/>
+  <path d="M230 30 L255 62 L238 58 L222 70 L210 55 Z" fill="#ffffff"/>
+  <path d="M0 220 L0 180 Q100 150 200 175 T400 165 L400 220 Z" fill="#3f6b45"/>
+</svg>

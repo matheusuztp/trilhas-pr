@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilhas PR | Início</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Menu padrão: o mesmo bloco em todas as páginas, muda só o link "active" -->
+  <header class="topo">
+    <a href="index.html" class="marca"><img src="img/logo.svg" alt="" width="36" height="36">Trilhas PR</a>
+    <nav id="menu" class="menu">
+      <a href="index.html" class="active">Início</a>
+      <a href="form.html">Inscrição</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+    <button type="button" class="btn-icone" id="btnTema" aria-label="Alternar tema claro/escuro">◐</button>
+    <button type="button" class="btn-icone" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </header>
+
+  <main class="conteudo">
+    <section class="destaque">
+      <div>
+        <h1 class="titulo">Descubra as trilhas do Paraná</h1>
+        <p>Da Serra do Mar aos picos mais altos do Sul do Brasil: escolha uma trilha, confira o nível de dificuldade e inscreva-se numa saída guiada.</p>
+        <a href="form.html" class="btn">Quero me inscrever</a>
+      </div>
+      <img src="img/hero.svg" alt="Ilustração de montanhas ao amanhecer com uma trilha">
+    </section>
+
+    <h2 class="subtitulo">Trilhas em destaque</h2>
+    <section class="grade">
+      <article class="caixa card">
+        <img src="img/pico.svg" alt="Ilustração do Pico Paraná">
+        <div class="card-corpo">
+          <span><span class="etiqueta dificil">Difícil</span></span>
+          <h3>Pico Paraná</h3>
+          <p>O ponto mais alto do Sul do Brasil, com vista para toda a Serra do Mar.</p>
+          <button type="button" class="btn btn-secundario" data-trilha="pico">Saiba mais...</button>
+        </div>
+      </article>
+
+      <article class="caixa card">
+        <img src="img/anhangava.svg" alt="Ilustração do Morro do Anhangava">
+        <div class="card-corpo">
+          <span><span class="etiqueta moderada">Moderada</span></span>
+          <h3>Morro do Anhangava</h3>
+          <p>Subida curta e íngreme perto de Curitiba, ótima para ver o nascer do sol.</p>
+          <button type="button" class="btn btn-secundario" data-trilha="anhangava">Saiba mais...</button>
+        </div>
+      </article>
+
+      <article class="caixa card">
+        <img src="img/itupava.svg" alt="Ilustração do Caminho do Itupava">
+        <div class="card-corpo">
+          <span><span class="etiqueta">Fácil a moderada</span></span>
+          <h3>Caminho do Itupava</h3>
+          <p>Trilha histórica calçada em pedra que desce a serra pela Mata Atlântica.</p>
+          <button type="button" class="btn btn-secundario" data-trilha="itupava">Saiba mais...</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Janela pop-up (modal) preenchida pelo script/index.js -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="caixa modal-caixa">
+      <button type="button" class="btn-icone" id="btnFechar" aria-label="Fechar">✕</button>
+      <h2 class="titulo" id="modalTitulo"></h2>
+      <p id="modalTexto"></p>
+      <ul id="modalLista"></ul>
+      <a href="form.html" class="btn" id="modalLink">Inscrever-se nesta trilha</a>
+    </div>
+  </div>
+
+  <footer class="rodape">Trilhas PR · Atividade Somativa 1 · PUCPR</footer>
+
+  <script src="script/menu.js"></script>
+  <script src="script/index.js"></script>
+</body>
+</html>

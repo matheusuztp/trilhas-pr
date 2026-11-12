@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilhas PR | Sobre</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Menu padrão: o mesmo bloco em todas as páginas, muda só o link "active" -->
+  <header class="topo">
+    <a href="index.html" class="marca"><img src="img/logo.svg" alt="" width="36" height="36">Trilhas PR</a>
+    <nav id="menu" class="menu">
+      <a href="index.html">Início</a>
+      <a href="form.html">Inscrição</a>
+      <a href="about.html" class="active">Sobre</a>
+    </nav>
+    <button type="button" class="btn-icone" id="btnTema" aria-label="Alternar tema claro/escuro">◐</button>
+    <button type="button" class="btn-icone" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </header>
+
+  <main class="conteudo">
+    <h1 class="titulo">Sobre o site</h1>
+    <p>O <strong>Trilhas PR</strong> é um guia fictício de trilhas do Paraná, criado para a Atividade Somativa 1. O objetivo é mostrar, só com HTML, CSS e JavaScript puros (sem frameworks), um site com visual padronizado, menu comum, formulário validado e leitura de dados enviados pelo método GET.</p>
+    <p class="texto-suave">As informações das trilhas são aproximadas e servem apenas como conteúdo de exemplo.</p>
+
+    <h2 class="subtitulo">Autor</h2>
+    <div class="caixa autor">
+      <img src="img/autor.svg" alt="">
+      <div>
+        <!-- TROCAR: coloque aqui seu nome completo -->
+        <strong>Seu Nome Completo</strong><br>
+        Fundamentos de Programação Web · PUCPR<br>
+        <span class="texto-suave">Novembro de 2026</span>
+      </div>
+    </div>
+
+    <h2 class="subtitulo">Organização dos arquivos</h2>
+    <div class="caixa">
+      <table class="tabela">
+        <tbody>
+          <tr><th>index.html</th><td>Página inicial com cards e janela pop-up "Saiba mais".</td></tr>
+          <tr><th>form.html</th><td>Formulário de inscrição enviado com método GET.</td></tr>
+          <tr><th>formAction.html</th><td>Recebe os dados do formulário e os mostra numa tabela.</td></tr>
+          <tr><th>about.html</th><td>Esta página: apresentação do trabalho e do autor.</td></tr>
+          <tr><th>css/style.css</th><td>Único arquivo de estilo, com variáveis de cor e classes reaproveitáveis.</td></tr>
+          <tr><th>script/menu.js</th><td>Menu hambúrguer no celular e troca de tema claro/escuro (todas as páginas).</td></tr>
+          <tr><th>script/index.js</th><td>Abre e fecha o modal com os detalhes de cada trilha.</td></tr>
+          <tr><th>script/form.js</th><td>Validação de todos os campos, máscara de celular e contador de caracteres.</td></tr>
+          <tr><th>script/formAction.js</th><td>Lê a URL com URLSearchParams e monta a tabela de confirmação.</td></tr>
+          <tr><th>script/about.js</th><td>Abre e fecha os painéis do acordeão abaixo.</td></tr>
+          <tr><th>img/</th><td>Logo e ilustrações em SVG feitas para o site.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="subtitulo">Como cada tecnologia foi usada</h2>
+    <button type="button" class="acordeao-botao" aria-expanded="false">HTML: estrutura</button>
+    <div class="acordeao-painel">
+      <p>Elementos semânticos (<code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>footer</code>), formulário com tipos de campo (<code>email</code>, <code>tel</code>, <code>date</code>, <code>radio</code>, <code>checkbox</code>) e atributos de validação (<code>required</code>, <code>minlength</code>, <code>maxlength</code>, <code>pattern</code>). Todos os links e arquivos usam caminho relativo.</p>
+    </div>
+
+    <button type="button" class="acordeao-botao" aria-expanded="false">CSS: apresentação</button>
+    <div class="acordeao-painel">
+      <p>Cores guardadas em variáveis (<code>:root</code>), classes reaproveitadas em várias páginas (<code>.caixa</code>, <code>.btn</code>, <code>.titulo</code>, <code>.etiqueta</code>), layout com Flexbox e Grid, animação do modal com <code>@keyframes</code> e <code>@media</code> para adaptar o menu ao celular.</p>
+    </div>
+
+    <button type="button" class="acordeao-botao" aria-expanded="false">JavaScript: interação</button>
+    <div class="acordeao-painel">
+      <p>Eventos de clique (menu, tema, modal, acordeão), validação com expressões regulares, máscara de celular, contador de caracteres, leitura dos parâmetros GET com <code>URLSearchParams</code> e alteração de estilo trocando classes com <code>classList</code>.</p>
+    </div>
+  </main>
+
+  <footer class="rodape">Trilhas PR · Atividade Somativa 1 · PUCPR</footer>
+
+  <script src="script/menu.js"></script>
+  <script src="script/about.js"></script>
+</body>
+</html>

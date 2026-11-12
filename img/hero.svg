@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Montanhas ao amanhecer">
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4b26b"/>
+      <stop offset="1" stop-color="#fbe3c0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#ceu)"/>
+  <circle cx="420" cy="140" r="50" fill="#fff4d6"/>
+  <path d="M0 260 L120 130 L200 210 L300 90 L420 220 L500 160 L600 240 L600 400 L0 400 Z" fill="#7a9a76"/>
+  <path d="M300 90 L330 125 L310 120 L290 135 L275 118 Z" fill="#ffffff"/>
+  <path d="M0 300 L90 230 L180 290 L290 200 L390 280 L480 230 L600 300 L600 400 L0 400 Z" fill="#4f7a4c"/>
+  <path d="M0 350 Q150 300 300 340 T600 330 L600 400 L0 400 Z" fill="#2f5d3a"/>
+  <path d="M250 400 Q290 360 330 345 Q360 335 380 340" stroke="#e9d8b4" stroke-width="6" fill="none" stroke-dasharray="14 10" stroke-linecap="round"/>
+</svg>

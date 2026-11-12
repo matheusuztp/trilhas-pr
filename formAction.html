@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilhas PR | Confirmação</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Menu padrão: o mesmo bloco em todas as páginas, muda só o link "active" -->
+  <header class="topo">
+    <a href="index.html" class="marca"><img src="img/logo.svg" alt="" width="36" height="36">Trilhas PR</a>
+    <nav id="menu" class="menu">
+      <a href="index.html">Início</a>
+      <a href="form.html" class="active">Inscrição</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+    <button type="button" class="btn-icone" id="btnTema" aria-label="Alternar tema claro/escuro">◐</button>
+    <button type="button" class="btn-icone" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </header>
+
+  <main class="conteudo">
+    <!-- Mostrado quando a página recebe dados pela URL (método GET) -->
+    <section id="resultado" class="oculto">
+      <h1 class="titulo" id="saudacao">Inscrição recebida!</h1>
+      <p class="texto-suave">Confira abaixo os dados que chegaram pela URL e foram lidos com JavaScript.</p>
+
+      <div class="caixa">
+        <table class="tabela">
+          <tbody id="tabelaDados"></tbody>
+        </table>
+      </div>
+
+      <h2 class="subtitulo">Dados brutos na URL</h2>
+      <code class="codigo" id="queryString"></code>
+
+      <p><a href="form.html" class="btn">Nova inscrição</a></p>
+    </section>
+
+    <!-- Mostrado quando alguém abre a página direto, sem enviar o formulário -->
+    <section id="semDados" class="oculto caixa">
+      <h1 class="titulo">Nenhum dado recebido</h1>
+      <p>Esta página mostra os dados enviados pelo formulário. Preencha a inscrição primeiro.</p>
+      <a href="form.html" class="btn">Ir para o formulário</a>
+    </section>
+  </main>
+
+  <footer class="rodape">Trilhas PR · Atividade Somativa 1 · PUCPR</footer>
+
+  <script src="script/menu.js"></script>
+  <script src="script/formAction.js"></script>
+</body>
+</html>
